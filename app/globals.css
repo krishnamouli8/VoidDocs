@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-lime: #CCFF00;
+  --color-neon-pink: #FF0099;
+  --color-deep-purple: #1A0033;
+}
+
+@layer utilities {
+  .brutalist-border {
+    @apply border-4 border-[#CCFF00];
+  }
+
+  .brutalist-shadow {
+    box-shadow: 10px 10px 0px 0px rgba(204,255,0,1); /* #CCFF00 */
+  }
+  
+  .brutalist-shadow-sm {
+    box-shadow: 4px 4px 0px 0px rgba(255,0,153,1); /* #FF0099 */
+  }
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  @apply bg-[#1A0033] text-[#CCFF00];
+}
